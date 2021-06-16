@@ -1,0 +1,50 @@
+﻿@import url('switzer.css');
+
+/*Common Styles*/
+:root{
+    
+}
+body {
+    font-family: 'Switzer-Variable', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #FFF;
+}
+.back-link{
+    color: #FFF;
+    transition: ease-in 0.2s;
+    text-decoration: none;
+    font-size: 2.5em;
+
+}
+    .back-link:hover {
+        color: #310D71;
+    }
+
+
+
+
+/*About Page Styles */
+
+.about-container {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
+    box-sizing: border-box; /* Opera/IE 8+ */
+    background: linear-gradient(180deg,rgba(203, 137, 255, 1),rgba(161, 40, 255, 1));
+    height: 100vh;
+    padding: 2em;
+    
+}
+
+.about-heading{
+    font-size: 11em;
+    font-weight:700;
+    line-height:110%;
+}
+.about-paragraph-container{
+
+}
+.about-paragraph{
+    font-size: 2.5em;
+    line-height: 120%;
+}
