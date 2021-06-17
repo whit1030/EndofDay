@@ -52,7 +52,7 @@ C:\Users\nikol\source\repos\EndOfDay\bin\roslyn\VBCSCompiler.exe
 C:\Users\nikol\source\repos\EndOfDay\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\nikol\source\repos\EndOfDay\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\nikol\source\repos\EndOfDay\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\nikol\source\repos\EndOfDay\obj\Debug\EndofDay.csprojAssemblyReference.cache
 C:\Users\nikol\source\repos\EndOfDay\obj\Debug\EndofDay.csproj.CopyComplete
 C:\Users\nikol\source\repos\EndOfDay\obj\Debug\EndofDay.dll
 C:\Users\nikol\source\repos\EndOfDay\obj\Debug\EndofDay.pdb
+C:\Users\nikol\source\repos\EndOfDay\obj\Debug\EndofDay.csprojAssemblyReference.cache

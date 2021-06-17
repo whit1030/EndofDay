@@ -99,10 +99,11 @@ namespace EndofDay.Models
         //Method used to seperate final deposit and float.
         public static CashDrawer Deposit(CashDrawer cashdrawer)
         {
-            double OnHand = cashdrawer.getTotal() - 100;
-            CashDrawer depositEnvelope = depositCalculator(cashdrawer, OnHand);
-            return depositEnvelope;
-
+            
+                double OnHand = cashdrawer.getTotal() - 100;
+                CashDrawer depositEnvelope = depositCalculator(cashdrawer, OnHand);
+                return depositEnvelope;
+            
             
         }
     }

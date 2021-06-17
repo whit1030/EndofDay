@@ -1,6 +1,6 @@
 ﻿@import url('switzer.css');
 
-/*Common Styles*/
+
 :root{
     
 }
@@ -14,13 +14,39 @@ body {
     color: #FFF;
     transition: ease-in 0.2s;
     text-decoration: none;
-    font-size: 2.5em;
-
+    font-size: 1em;
+    text-transform:uppercase;
+    margin-left:0.5em;
+    margin-top:0.5em;
+    
 }
     .back-link:hover {
         color: #310D71;
     }
-
+.orange{
+    transition: ease-in 0.2s;
+}
+.purple {
+    transition: ease-in 0.2s;
+}
+.green {
+    transition: ease-in 0.2s;
+}
+.blue {
+    transition: ease-in 0.2s;
+}
+.orange:hover {
+    color: #DB6523;
+}
+.purple:hover {
+    color: #A33CF3;
+}
+.green:hover {
+    color: #7DC85A;
+}
+.blue:hover{
+    color:#3D7EDF;
+}
 
 
 
@@ -30,21 +56,396 @@ body {
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box; /* Firefox, other Gecko */
     box-sizing: border-box; /* Opera/IE 8+ */
-    background: linear-gradient(180deg,rgba(203, 137, 255, 1),rgba(161, 40, 255, 1));
-    height: 100vh;
+    background: #A33CF3;
+    min-height: 100vh;
     padding: 2em;
-    
 }
 
 .about-heading{
-    font-size: 11em;
+    font-size: 6em;
     font-weight:700;
-    line-height:110%;
+    line-height:100%; 
+    
 }
-.about-paragraph-container{
+
+.about-paragraph {
+    font-weight:500;
+    font-size: 1em;
+    line-height: 120%;
+    letter-spacing: 1px;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .about-heading{
+        font-size:11em;
+    }
+    .about-paragraph{
+        font-size: 2em;
+        letter-spacing: 1px;
+    }
+    .about-text-div{
+        width: 90%;
+        
+    }
+    .back-link{
+        font-size:1.5em;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .about-heading{
+        font-size:9em;
+    }
+    .about-paragraph{
+        font-size:1.5em;
+        letter-spacing:1px;
+    }
+    .about-text-div{
+        width:45%;
+    }
+}
+
+/*Hompage Styles*/
+.homepage-container {
+    background: #DC3E3E;
+    height: 100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    
+}
+.title{
+    text-transform:uppercase;
+    margin:0;
+    font-size: 7em;
+    line-height:110%;
+    text-align:right;
+    padding-right:0.25em;
+}
+.menulink {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.menuli {
+    list-style: none;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+@media only screen and (min-width: 768px) {
+
+.title{
+    font-size:11em;
+}
+.menulink{
+    font-size:2em;
+    
+}
+}
+@media only screen and (min-width: 1024px) {
+.title{
+    font-size:13em;
+}
+.menulink{
+    font-size:2.5em;
+}
+}
+@media only screen and (min-width: 1200px) {
+    .homepage-container{
+        flex-direction:row-reverse;
+        justify-content:space-between;
+        align-items:center;
+        max-height: 100vh;
+        
+    }
+    .title{
+        font-size: 15.5em;
+    }
+    .menuli{
+        padding-bottom:2em;
+        padding-top:2em;
+    }
+}
+
+/*Waste sheet style*/
+.waste-bg {
+    background: #7DC85A;
+    min-height: 100vh;
+    display:flex;
+    flex-direction:column;
+    align-self:flex-start;
+    justify-content:space-evenly;
+}
+.waste-container {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
+    box-sizing: border-box; /* Opera/IE 8+ */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.waste-list{
+    display:flex;
+    flex-direction:column;
+    font-size: 1.4em;
+    width:90%;
+}
+.waste-heading{
+    text-transform:uppercase;
+    font-size:6em;
+    padding-left:0.2em;
+}
+.waste-list-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    padding-bottom:1.5em;
+    width:100%;
+}
+.waste-text-box{
+    background:none;
+    border: 1px solid #FFF;
+    color: #FFF;
+    width: 50px;
+    height:50px;
+    text-align:center;
+    
+    
+}
+.waste-output-box{
+    width:90vw;
+    background:none;
+    border: 1px solid #FFF;
+    padding:0.5em;
+    color:white;
+    font-family:"Switzer-Variable",sans-serif;
+    font-size:1.25em;
+    margin-top: 3em;
+}
+.waste-backbutton-div{
+    padding-top:1em;
+    padding-left:0.5em;
+    width:90%;
+}
+@media only screen and (min-width: 768px) {
+
+.waste-list{
+    width:90%;
+}
+.waste-heading{
+    font-size:6.6em;
+}
+}
+@media only screen and (min-width: 1200px) {
+
+.waste-container{
+    
+}
+.waste-output-box{
+    width: 50vw;
+    margin-top: 6em;
+}
+.waste-list{
+    width: 55%;
+}
+.waste-heading{
+    font-size:  10em;
+}
+}
+
+/*Safe Count Styles*/
+
+.safe-count-bg {
+    background: #3D7EDF;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    
+}
+
+.value-box {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding: 1px 2px;
+}
+.box-container{
+    display:flex;
+    flex-direction: row;
+    padding: 1em 0.5em;
+}
+.coins-container{
+    display:flex;
+    flex-direction:row-reverse;
+    align-items: flex-start;
+    justify-content:space-between;
+    width:100%;
+}
+.add-roll-btn {
+    background: none;
+    color: white;
+    border: 1px solid #FFF;
+    transition: ease-in 0.2s;
+    font-weight: 700;
+    margin-left: 5px;
+}
+    .add-roll-btn:hover {
+        background: #FFF;
+        color: #3D7EDF;
+        
+    }
+.total-container{
+    margin-top:5em;
+    margin-bottom:5em;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    width:100%;
+}
+
+.total_label{
+    font-size:2em;
+    margin-right: 1em;
+}
+.total-textbox {
+    border: 1px solid white;
+    height: 50px;
+    width: 60px;
+    text-align: center;
+    font-size: 1.5em;
+    margin-left: 1em;
+    color: #FFF;
+    
+}
+.coinbox-heading{
+    font-size:6em;
+    text-transform:uppercase;
+}
+@media only screen and (min-width: 768px) {
+    .coins-container{
+        justify-content:space-around;
+        flex-direction:row;
+        
+    }
+    .safe-count-bg {
+        align-items: center;
+    }
+    .coinbox-heading{
+        font-size:7em;
+    }
 
 }
-.about-paragraph{
-    font-size: 2.5em;
-    line-height: 120%;
+@media only screen and (min-width: 1024px) {
+
+.coinbox-heading{
+    font-size:9em;
+}
+.value-label{
+    font-size:1.75em;
+}
+.value-box{
+    width:100px;
+}
+.waste-text-box{
+    font-size: 1.75em;
+}
+}
+@media only screen and (min-width: 1200px) {
+    .desktop-container{
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        justify-content: center;
+        width:90%;
+        height:75vh;
+    }
+    .coinbox-heading{
+        font-size: 5em;
+    }
+}
+/*Deposit Styles*/
+.deposit-background {
+    background: #E9B363;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.deposit-header{
+   
+    font-size: 5.5em;
+    text-transform:uppercase;
+    
+}
+#receiptInput {
+    width: 100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+.submit-btn{
+    margin-top:0.75em;
+    background:none;
+    border: 2px solid white;
+    color: white;
+    font-weight:700;
+    padding:0.7em 1em;
+    font-size:1.3em;
+    transition: ease-in 0.1s;
+}
+.submit-container{
+    width:100%;
+    display:flex;
+    align-content:center;
+    justify-content:center;
+    margin-bottom:2em;
+}
+.submit-btn:hover{
+    background: #FFF;
+    color:black;
+
+}
+#coinInput{
+    width:100%;
+}
+.form-end{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+@media only screen and (min-width: 768px) {
+
+.deposit-header{
+    font-size: 9em;
+}
+.deposit-background{
+    align-items:center;
+}
+}
+@media only screen and (min-width: 1024px) {
+    .deposit-header {
+        font-size:11em;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .deposit-header{
+        font-size:5em;
+    }
+
 }

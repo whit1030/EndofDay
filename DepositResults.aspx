@@ -6,10 +6,11 @@
 <head runat="server">
     <title>End of Day - Deposit Results</title>
     <link href="css/styles.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
+        <div class="deposit-background">
             <div id="tipsDiv">
                 <h1>Tip Deposit</h1>
                 <asp:Table runat="server" ID="tipsTable">

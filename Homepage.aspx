@@ -6,24 +6,25 @@
 <head runat="server">
     <title>End of Day - Homepage</title>
     <link href="css/styles.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 </head>
 <body>
-    <form id="form1" runat="server">
-        <div>
-            <div class="container">
+    
+        
+            <div class="homepage-container">
           <div class="title-box">
             <h1 class="title">End<br/> of<br/> Day</h1>
           </div>
           <div class="menuBox">
               <ul class="menuList">
-                  <li class="menuli"><a href="SafeCount.aspx" runat="server" class="menuLink green">Safe Count</a></li>
-                  <li class="menuli"><a href="Deposit.aspx" class="menuLink blue">Deposit</a></li>
-                  <li class="menuli"><a href="WasteSheet.aspx" class="menuLink brown">Waste</a></li>
-                  <li class="menuli"><a href="About.aspx" class="menuLink purple">About</a></li>
+                  <li class="menuli"><a href="SafeCount.aspx" runat="server" class="menulink blue">Safe Count</a></li>
+                  <li class="menuli"><a href="DepositCalculator.aspx" class="menulink orange">Deposit</a></li>
+                  <li class="menuli"><a href="WasteSheet.aspx" class="menulink green">Waste</a></li>
+                  <li class="menuli"><a href="About.aspx" class="menulink purple">About</a></li>
               </ul>
           </div>
       </div>
-        </div>
-    </form>
+        
+    
 </body>
 </html>

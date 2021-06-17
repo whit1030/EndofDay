@@ -17,11 +17,14 @@ namespace EndofDay
 
         protected void Submit_Click(object sender, EventArgs e)
         {
-            EodReceipt EndOfDay = new EodReceipt(Convert.ToDouble(netValue.Text), Convert.ToDouble(quantityValue.Text), Convert.ToDouble(tipValue.Text), Convert.ToDouble(expectedValue.Text));
-            Session["eodReceipt"] = EndOfDay;
+            if (Page.IsValid)
+            {
+                EodReceipt EndOfDay = new EodReceipt(Convert.ToDouble(netValue.Text), Convert.ToDouble(quantityValue.Text), Convert.ToDouble(tipValue.Text), Convert.ToDouble(expectedValue.Text));
+                Session["eodReceipt"] = EndOfDay;
 
-            receiptInput.Visible = false;
-            coinInput.Visible = true;
+                receiptInput.Visible = false;
+                coinInput.Visible = true;
+            }
         }
         protected void valueUpdated(object sender, EventArgs e)
         {
