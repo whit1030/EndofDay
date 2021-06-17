@@ -368,7 +368,7 @@ body {
         align-items:center;
         justify-content: center;
         width:90%;
-        height:75vh;
+        min-height:90vh;
     }
     .coinbox-heading{
         font-size: 5em;
@@ -453,11 +453,11 @@ body {
 .results-container{
     display:flex;
     flex-direction:column;
-    align-items:center;
-    justify-content:space-around;
+    align-items:flex-end;
+    justify-content: space-around;
 }
 .deposit-heading{
     text-align:center;
     text-transform:uppercase;
-    font-size:5em;
+    font-size:6em;
 }
