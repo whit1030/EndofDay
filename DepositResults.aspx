@@ -11,8 +11,9 @@
 <body>
     <form id="form1" runat="server">
         <div class="deposit-background">
+            <div class="results-container">
             <div id="tipsDiv">
-                <h1>Tip Deposit</h1>
+                <h1 class="deposit-heading">Tip Deposit</h1>
                 <asp:Table runat="server" ID="tipsTable">
                     <asp:TableHeaderRow runat="server">
                         <asp:TableHeaderCell runat="server">Currency</asp:TableHeaderCell>
@@ -62,7 +63,7 @@
             </div >
 
             <div id="DepositDiv">
-                <h1>Sales Deposit</h1>
+                <h1 class="deposit-heading">Sales Deposit</h1>
                 <asp:Table runat="server" ID="depositTable">
                     <asp:TableHeaderRow runat="server">
                         <asp:TableHeaderCell runat="server">Currency</asp:TableHeaderCell>
@@ -113,9 +114,12 @@
             </div>
 
             <div id="emailDiv">
-                <h1>End of Day</h1>
-                <asp:TextBox runat="server" ID="emailTextBox" TextMode="MultiLine"></asp:TextBox>
+                <h1 class="deposit-heading">End of Day</h1>
+                <div>
+                <asp:TextBox runat="server" ID="emailTextBox" TextMode="MultiLine" Height="500px" CssClass="waste-output-box"></asp:TextBox>
+                    </div>
             </div>
+                </div>
         </div>
     </form>
 </body>

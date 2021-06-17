@@ -358,7 +358,7 @@ body {
     width:100px;
 }
 .waste-text-box{
-    font-size: 1.75em;
+    font-size: 1em;
 }
 }
 @media only screen and (min-width: 1200px) {
@@ -448,4 +448,16 @@ body {
         font-size:5em;
     }
 
+}
+
+.results-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-around;
+}
+.deposit-heading{
+    text-align:center;
+    text-transform:uppercase;
+    font-size:5em;
 }
