@@ -34,7 +34,7 @@
                     </div>
                     <div class="box-container">
                         <div class="value-box"><asp:Label runat="server" Text="$10" Enabled="false" CssClass="value-label"></asp:Label></div>
-                        <div><asp:TextBox runat="server"  ID="tenAmount" AutoPostBack="true" Text ="0" OnTextChanged="valueUpdated" CssClass="waste-text-box"/>></div>   
+                        <div><asp:TextBox runat="server"  ID="tenAmount" AutoPostBack="true" Text ="0" OnTextChanged="valueUpdated" CssClass="waste-text-box"/></div>   
                     </div>
                     <div class="box-container">
                         <div class="value-box"><asp:Label runat="server" Text="$5" Enabled="false" CssClass="value-label"></asp:Label></div>
