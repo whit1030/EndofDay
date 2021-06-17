@@ -22,19 +22,19 @@
                 <div class="waste-list">
                     <div class="waste-list-row">
                         <asp:Label runat="server" Text="Net Sales" AssociatedControlID="netValue"></asp:Label>
-                        <asp:TextBox runat="server" ID="netValue" class="waste-text-box" Text="0"></asp:TextBox>
+                        <asp:TextBox runat="server" ID="netValue" class="waste-text-box" Text="0" Width="150px"></asp:TextBox>
                     </div>
                     <div class="waste-list-row">
                          <asp:Label runat="server" Text="Quantity of Orders" AssociatedControlID="quantityValue"></asp:Label>
-                         <asp:TextBox runat="server" ID="quantityValue" class="waste-text-box" Text="0"></asp:TextBox>
+                         <asp:TextBox runat="server" ID="quantityValue" class="waste-text-box" Text="0" Width="150px"></asp:TextBox>
                     </div>
                     <div class="waste-list-row">
                         <asp:Label runat="server" Text="Tips" AssociatedControlID="tipValue"></asp:Label>
-                        <asp:TextBox runat="server" ID="tipValue" class="waste-text-box" Text="0"></asp:TextBox>
+                        <asp:TextBox runat="server" ID="tipValue" class="waste-text-box" Text="0" Width="150px"></asp:TextBox>
                     </div>
                     <div class="waste-list-row">
                         <asp:Label runat="server" Text="Expected Deposit" AssociatedControlID="expectedValue"></asp:Label>
-                        <asp:TextBox runat="server" ID="expectedValue" class="waste-text-box" Text="0"> </asp:TextBox>
+                        <asp:TextBox runat="server" ID="expectedValue" class="waste-text-box" Text="0" Width="150px"> </asp:TextBox>
                     </div>
                 </div>
                 <div>
