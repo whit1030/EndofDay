@@ -37,7 +37,7 @@ namespace EndofDay.Models
                 depositDrawer.addValue(20);
             }
             //Ten Check
-            while ((intdeposit >= 10) && (cashdrawer.Tenvalue > 0))
+            while ((intdeposit >= 1000) && (cashdrawer.Tenvalue > 0))
             {
                 intdeposit -= 1000;
                 cashdrawer.removeTen();

@@ -165,12 +165,15 @@ namespace EndofDay
                         dnickelRow.Visible = true;
                     }
                     emailTextBox.Text += $"Net Sales - ${eodreceipt.NetSales} \r\n";
-                    emailTextBox.Text += $"Quantity of Orders - ${eodreceipt.QuantityofOrders}  \r\n";
-                    emailTextBox.Text += $"Tips - ${eodreceipt.Tip} \r\n";
+                    emailTextBox.Text += $"Quantity of Orders - {eodreceipt.QuantityofOrders}  \r\n";
+                    emailTextBox.Text += $"Tips - ${tipsDrawer.getTotal()} \r\n";
                     emailTextBox.Text += $"Expected Deposit - ${eodreceipt.ExpectedDeposit} \r\n";
-                    emailTextBox.Text += $"Actual Cash on Hand - ${depositDrawer.getTotal()} \r\n";
-                    emailTextBox.Text += $"Over/Under - ${eodreceipt.ExpectedDeposit - depositDrawer.getTotal()} \r\n";
-                    emailTextBox.Text += "Money from Tip Float - 0";
+                    emailTextBox.Text += $"Expected Deposit + Tips - ${tipsDrawer.getTotal() + eodreceipt.ExpectedDeposit}\r\n";
+                    emailTextBox.Text += $"Actual Cash on Hand(Tips + Actual Deposit) - ${depositDrawer.getTotal() + tipsDrawer.getTotal()} \r\n";
+                    emailTextBox.Text += $"Actual Cash on Hand <+/-> - ${(tipsDrawer.getTotal() + eodreceipt.ExpectedDeposit) - (depositDrawer.getTotal() + tipsDrawer.getTotal())} \r\n";
+                    emailTextBox.Text += $"Actual Deposit - ${depositDrawer.getTotal()}\r\n";
+                    emailTextBox.Text += $"Deposit <+/-> - ${eodreceipt.ExpectedDeposit - depositDrawer.getTotal() }\r\n";
+                    emailTextBox.Text += "Money from Tip Float - 0 \r\n";
 
                 }
                 catch(Exception ex)
@@ -251,12 +254,16 @@ namespace EndofDay
                     }
 
                     emailTextBox.Text += $"Net Sales - ${eodreceipt.NetSales} \r\n";
-                    emailTextBox.Text += $"Quantity of Orders - ${eodreceipt.QuantityofOrders}  \r\n";
-                    emailTextBox.Text += $"Tips - ${eodreceipt.Tip} \r\n";
+                    emailTextBox.Text += $"Quantity of Orders - {eodreceipt.QuantityofOrders}  \r\n";
+                    emailTextBox.Text += $"Tips - ${tipsDrawer.getTotal()} \r\n";
                     emailTextBox.Text += $"Expected Deposit - ${eodreceipt.ExpectedDeposit} \r\n";
-                    emailTextBox.Text += $"Actual Cash on Hand - ${tipsDrawer.getTotal() - eodreceipt.Tip } \r\n";
-                    emailTextBox.Text += $"Over/Under - ${eodreceipt.ExpectedDeposit - (tipsDrawer.getTotal() - eodreceipt.Tip)} \r\n";
-                    emailTextBox.Text += $"Money from Tip Float - ${eodreceipt.Tip - tipsDrawer.getTotal()}";
+                    emailTextBox.Text += $"Tips + Expected Deposit = ${eodreceipt.Tip + eodreceipt.ExpectedDeposit} \r\n";
+                    emailTextBox.Text += $"Actual Cash on Hand (Tips + Deposit)- ${tipsDrawer.getTotal()  } \r\n";
+                    emailTextBox.Text += $"Actual Cash on Hand <+/-> - {tipsDrawer.getTotal() } \r\n";
+                    emailTextBox.Text += $"Deposit - { eodreceipt.Tip - tipsDrawer.getTotal()} \r\n";
+                    emailTextBox.Text += $"Deposit <+/-> - { eodreceipt.ExpectedDeposit - (eodreceipt.Tip - tipsDrawer.getTotal()) } \r\n";
+
+                    emailTextBox.Text += $"Money from Tip Float - ${eodreceipt.Tip - tipsDrawer.getTotal()}\r\n";
                 }
                 catch (Exception ee)
                 {

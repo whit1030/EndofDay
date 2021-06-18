@@ -451,13 +451,21 @@ body {
 }
 
 .results-container{
+    width:100%;
     display:flex;
     flex-direction:column;
-    align-items:flex-end;
+    align-items:center;
     justify-content: space-around;
 }
 .deposit-heading{
     text-align:center;
     text-transform:uppercase;
     font-size:6em;
+}
+
+@media only screen and (min-width: 1200px) {
+.deposit-heading{
+    font-size: 4em;
+}
+
 }
