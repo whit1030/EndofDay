@@ -109,7 +109,7 @@
                 <div class="form-end">
                 <div class="total-container">
                   <asp:Label Text="Total" runat="server" CssClass="total-label">Total</asp:Label>
-                    <asp:TextBox ID="total" runat="server" Text="0" Enabled="false" cssClass="total-textbox"></asp:TextBox>
+                    <asp:TextBox ID="total" runat="server" Text="0" Enabled="false" cssClass="total-textbox" Width="150px"></asp:TextBox>
                 </div>
                 <div class="submit-container">
                     <asp:Button text="submit" runat="server" OnClick="Coin_Submit" CssClass="submit-btn"  CausesValidation="true"/>
